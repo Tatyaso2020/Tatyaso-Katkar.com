@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatyaso Katkar Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">PROJECT</a></li>
+                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>    
+            <div class="header-text">
+                <p><h3 style="color: #ff004f;">Software Developer</h3></p>
+                <h1>Hello, I'm <span>Tatyaso Katkar</span><br> From Solapur.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/tk2.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>
+                        <br>
+                        <br>
+
+                        <b><p class="paragraph">Hello, I Am Tatyaso Katkar from Mangalwedha,
+                              Maharashtra.
+                              I am Pursuing From Sangola College,Sangola in BCS 
+                              (Bachlor's Of Computer Science).
+                              Throughout my studies,I developed Solid Foundation in key
+                              Areas such as Programming, Data Structures, and Algorithms.
+                              I have hands-on Exiperences Languages like Python,Java,and
+                              C++,and am Proficent in Using Tools like Git,SQL and Operating System. </p></b>
+                              
+                    </p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------Projects------------   -->
+
+    <div id="services">
+        <div class="container">
+        <h1 class="sub-title">My Projects </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Created My First Analog Clock Project.</p>
+                    <a href="Images/index.html">Check Here</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Created My First Simple Calculator Project.</p>
+                    <a href="Images/Calculator_Demo.html">Check Here</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>DSA</h2>
+                    <p>Created Mentor-Mentee Management System.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------Resume---------->
+
+    <div id="resume"></div>
+        <div class="container">
+        <h1 class="sub-title">My Resume </h1>
+            <div class="resume-list">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Communication </span><br>Articulation of Ideas and Collaboration with Team Members.</li>
+                        <li><span>Problem Solving </span><br>Ability to Analyze Issues and Effective Solution.</li>
+                        <li><span>Time Management</span><br>Ability to Management of Time for Proper Management.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 </span><br>SSC(English School Bhose,Mangalwedha)</li>
+                        <li><span>2022 </span><br>HSC(New English School Sangola,Solapur)</li>
+                        <li><span>2025</span><br>BCS(Sangola College Sangola,Solapur)</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="Images/Tatyaso_Katkar_Resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+    </div>
+
+<!-------------Contact Me ----------->
+
+<div id="contact"></div>
+<div class="container">
+<div class="row">
+    <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i> tatyasokatkar2020@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 7447833156</p>
+        <div class="social-icons">
+        <a href="https://www.linkedin.com/in/tatyaso-katkar-843a622b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>   
+        <a href="https://www.instagram.com/tatyaso_katkar_2020/"><i class="fa-brands fa-square-instagram"></i></a>
+    </div>
+</div>
+    <div class="contact-right">
+
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2 btn3">Submit</button>
+        </form>
+        <span id="msg"></span>
+        
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright @ Tatyaso Katkar.</p>
+</div>
+</div>
+
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+           for(tablink of tablinks)
+           {
+            tablink.classList.remove("active-link");
+
+           }
+           for(tabcontent of tabcontents)
+           {
+            tabcontent.classList.remove("active-tab");
+
+           }
+           event.currentTarget.classList.add("active-link");
+
+           document.getElementById(tabname).classList.add("active-tab");
+                
+            }
+
+        
+
+    </script>
+
+    <script>
+
+   var sidemenu=document.getElementById("sidemenu");
+
+   function openmenu(){
+
+    sidemenu.style.right="0";
+
+   }
+
+   function closemenu(){
+
+sidemenu.style.right="-200px";
+
+}
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwywwqCIXdxPdrrwGqAf_DphgpgALFDxhpFV60ghcGl-CrPNn0MhRVlKqC6_6jq8g_i/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Sucessfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
